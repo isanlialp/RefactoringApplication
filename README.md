@@ -34,16 +34,16 @@ You need The following software and packages to install and run the developed to
 
 Software:
 
-Visual Studio (required minimum version 2017)
-R (3.6.2 version)
-LocMetrics (for installation from github:  )
-JHawk ( any recent version, not required professional versions)
+Visual Studio (required minimum version 2017),
+R (3.6.2 version),
+LocMetrics (for installation from github:  ),
+JHawk ( any recent version, not required professional versions),
 
 Package:
 
-Microsoft Code Analysis
-Microsoft Code Analysis Metrics
-Microsoft Office Interop Excel
+Microsoft Code Analysis,
+Microsoft Code Analysis Metrics,
+Microsoft Office Interop Excel,
 EPPlus
 
 
