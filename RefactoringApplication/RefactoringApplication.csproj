@@ -335,7 +335,6 @@
     <Compile Include="AppliedRefactoringTechniques.Designer.cs">
       <DependentUpon>AppliedRefactoringTechniques.cs</DependentUpon>
     </Compile>
-    <Compile Include="ScreenCapture.cs" />
     <Compile Include="Settings1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
