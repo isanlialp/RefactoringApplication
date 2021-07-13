@@ -122,7 +122,7 @@ namespace fileApp
 
         private void FileName_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Select the FOLDER PATH used for the developer command prompt and Get the CLASS NAME for which you want the metric value calculated.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(" Select the FOLDER PATH used for the developer command prompt and Get the CLASS NAME for which you want the metric value measured.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Information);
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             fbd.SelectedPath = @"C:\";
             if (fbd.ShowDialog() == DialogResult.OK)
@@ -239,7 +239,7 @@ namespace fileApp
         {
             if (String.IsNullOrEmpty(Tx_Bx_Metric.Text))
             {
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {
@@ -254,7 +254,7 @@ namespace fileApp
             bool anyChecked = allRname.Any(rb => rb.Checked);
             if (String.IsNullOrEmpty(Tx_Bx_Metric.Text) || (anyChecked == false))
             {
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Maintainability Index", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {

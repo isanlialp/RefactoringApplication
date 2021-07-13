@@ -89,7 +89,7 @@ namespace fileApp
             }
             return filePath;
         }
-        //METRIC CALCULATION
+        //METRIC MEASUREMENT
         private void StatementsPerMeth_Click(object sender, EventArgs e)
         {
             if (extension != null)
@@ -164,7 +164,7 @@ namespace fileApp
                         value = dividend / float.Parse(counter.ToString());
                         float result = (float)Math.Round(value * 100f) / 100f;
                         TxtBox_metric.Text = result.ToString();
-                        MessageBox.Show("Metric Value Has Been Calculated ", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Metric Value Has Been Measured", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -206,7 +206,7 @@ namespace fileApp
                         value = dividend / float.Parse(matches.Count.ToString());
                         float result = (float)Math.Round(value * 100f) / 100f;
                         TxtBox_metric.Text = result.ToString();
-                        MessageBox.Show("Metric Value Has Been Calculated ", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Metric Value Has Been Measured ", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -221,7 +221,7 @@ namespace fileApp
         {
             if (String.IsNullOrEmpty(TxtBox_metric.Text))
             {              
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {
@@ -237,7 +237,7 @@ namespace fileApp
             bool anyChecked = allRname.Any(rb => rb.Checked);
             if (String.IsNullOrEmpty(TxtBox_metric.Text) || (anyChecked == false))
             {
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Statements per Method", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {

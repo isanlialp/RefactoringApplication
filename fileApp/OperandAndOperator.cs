@@ -98,7 +98,7 @@ namespace fileApp
         {
             if (String.IsNullOrEmpty(textBoxOperand.Text) || String.IsNullOrEmpty(textBoxOperator.Text))
             {
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Operand and Operator Count per Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE.", "Operand and Operator Count per Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {
@@ -119,7 +119,7 @@ namespace fileApp
             bool anyChecked = allRname.Any(rb => rb.Checked);
             if (String.IsNullOrEmpty(textBoxOperand.Text) || String.IsNullOrEmpty(textBoxOperator.Text) || (anyChecked == false))
             {
-                MessageBox.Show("FAILED TO CALCULATE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Operand and Operator Count per Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("FAILED TO MEASURE METRIC VALUE:\nPlease, Upload Source Code Using the Button named GET CODE and Select the Refactoring Technique you want to measure.", "Operand and Operator Count per Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             else
             {

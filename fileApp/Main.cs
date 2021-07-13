@@ -563,10 +563,10 @@ namespace fileApp
             listBox2.Items.Clear();
             if (richTextBox1.Text.Contains(find))
             {
-                string[] parcala = richTextBox1.Text.Split(';');
+                string[] splitText = richTextBox1.Text.Split(';');
                 int n = -1;
                 counterJavaEF = 0;
-                foreach (string item in parcala)
+                foreach (string item in splitText)
                 {
                     listBox2.Items.Add(item);
                     if (item.ToString().Contains(find))
